@@ -10,6 +10,7 @@ A simple to-do list application built with a Laravel backend and a React fronten
 - [Installation](#installation)
   - [Clone the Repository](#1-clone-the-repository)
   - [Install Dependencies](#2-install-dependencies)
+- [Environment Variables](#environment-variables)
 - [Database Setup](#database-setup)
 - [Running the Application](#running-the-application)
 - [Testing](#testing)
@@ -60,12 +61,21 @@ composer install
 npm install
 ```
 
+## Environment Variables
+
+Type the following in the terminal for the environment variables.
+
+```bash
+cp .env.example .env
+```
+
 ## Database Setup
 
 ### 1. Create database
 
 Create database in your local machine with the name "to_do_list".
 Then update database configuration with your credentials in the ``` .env``` file.
+Notice that database connection should be mysql.
 
 ```bash
 DB_CONNECTION=mysql
